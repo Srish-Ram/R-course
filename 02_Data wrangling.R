@@ -155,4 +155,17 @@ gm_data_new<- gm_data %>%
 
 write.csv(gm_data_new, "gapminder_data2.csv")
 
+#using conditions
+
+gm_data %>% 
+  mutate(lifespan = ifelse(lifeExp < 30, 
+                           "below 30", "30+")) %>% 
+  head()
+
+
+
+write.csv(Africa, "Africa")
+
+
+
 
