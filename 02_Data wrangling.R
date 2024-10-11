@@ -162,8 +162,6 @@ gm_data %>%
                            "below 30", "30+")) %>% 
   head()
 
-
-
 write.csv(Africa, "Africa")
 
 
